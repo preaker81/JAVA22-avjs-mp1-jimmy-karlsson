@@ -1,3 +1,90 @@
-img{
-    width: 400px;
-}
+body {
+    background-color: #2a2a2e;
+    font-size: 2rem;
+  }
+
+  #gameContainer {
+    background: #737373;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #inputText{
+    margin: 1rem;
+    width: 15rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .newGameDiv{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newGameDiv > h1 {
+    font-size: 3rem;
+  }
+
+  .newGameDiv > button{
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 1.5rem;
+  }
+
+  .selections {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+    transition: 100ms;
+    padding: 1rem;
+  }
+
+  .selection:hover {
+    transform: scale(1.2);
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  #results {
+    margin: 1.5rem auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .resultScore {
+    margin: .5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #2a2a2e;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .resultSelection {
+    opacity: .5;
+  }
+
+  .resultSelection.winner {
+    opacity: 1;
+    font-size: 2.5rem;
+  }
+
