@@ -7,7 +7,7 @@ export class RockPaperScissors {
     // Initializing variables and selecting necessary DOM elements
     this.selectionBtns = document.querySelectorAll("[data-selection]");
     this.finalColumn = document.getElementById("roundResult");
-    this.playerScoreSpan = document.querySelector("[data-yourscore]");
+    this.playerScoreSpan = document.getElementById("playerScore");
     this.selections = [
       {
         name: "rock",
