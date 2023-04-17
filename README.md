@@ -1,1 +1,1 @@
-# boilerplate-parcel
+miniproject RPS game for advanced Javascript
