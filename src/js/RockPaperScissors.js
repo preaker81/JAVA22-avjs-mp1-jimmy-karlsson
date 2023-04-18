@@ -152,10 +152,10 @@ export class RockPaperScissors {
       btn.addEventListener("click", () => {
         location.reload();
       });
-      const displayDiv = this.createHTMLElement("div", { id: "displayDiv" });
+      await displayHighscores("displayDiv", newEntry);
 
       document.querySelector(".selections").append(div);
-      div.append(h1, btn, displayDiv);
+      div.append(h1, btn); // Remove displayDiv from this line
 
       await displayHighscores("displayDiv", newEntry);
     }
